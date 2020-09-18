@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    transition: all .1s linear;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    /* background-color: #979be6; */
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.show-menu {
+    animation-name: show-menu-animation;
+    animation-duration: .5s;
+}
+
+@keyframes show-menu-animation {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+/* TODO: hide menu */
+.hide-menu {
+    animation-name: hide-menu-animation;
+    animation-duration: .5s;
+}
+
+@keyframes hide-menu-animation {
+    from {
+        right: -50%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.book {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dropdown:hover>.dropdown-content {
+    display: block;
+}
+
+:root {
+    --sl-color-primary-hue: 18;
+    --sl-color-primary-saturation: 80%;
+}
+
+
+/* loading style */
+
+/*  */
